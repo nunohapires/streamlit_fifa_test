@@ -9,7 +9,7 @@ import time
 #carregando o conjunto de dados em cache para  facilitar o acesso e e diminuir o custo computacional 
 #usar o index_col = 0 para atribuir os indeces a uma unica coluna que começa em 0
 if "data" not in st.session_state:
-    df_data = pd.read_csv('streamlit_fifa_test/datasets/CLEAN_FIFA23_official_data.csv',index_col=0)
+    df_data = pd.read_csv('datasets/CLEAN_FIFA23_official_data.csv',index_col=0)
     #so usaremos dados de jogadorem com contratos validos até o ano em que rodar o codigo
     df_data = df_data[df_data['Contract Valid Until'] >= datetime.today().year]
     # excluir jogadorem que não tem valores registrados 
