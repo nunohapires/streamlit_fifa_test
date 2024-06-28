@@ -24,10 +24,7 @@ st.markdown('# FIFA2023 OFFICIAL DATASET !⚽')
 st.sidebar.markdown('Desenvolvido por [Nuno Henrique Albuquerque Pires], estudante de engenharia da universidade federal de alagos(UFAL).')
 
 #criando o botão 
-btn = st.button("Acesse os dados na web !")
-if btn :
-    time.sleep(1)
-    wb.open_new_tab('https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data')
+btn = st.link_button("Acesse os dados na web !",'https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data')
 
 #blablabla explicando o conjunto de dados 
 st.markdown(
